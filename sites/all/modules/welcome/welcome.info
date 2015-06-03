@@ -1,0 +1,5 @@
+name = Welcome Module
+description = Redirects user to Welcome page on login
+packages = Custom Mods
+core = 7.x
+files[] = welcome.module
