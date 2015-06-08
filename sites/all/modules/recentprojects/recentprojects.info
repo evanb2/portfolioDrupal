@@ -1,0 +1,5 @@
+name = Recent Projects
+description = Recent projects view using ajax.
+package = Custom Modules
+core = 7.x
+files[] = recentprojects.module
