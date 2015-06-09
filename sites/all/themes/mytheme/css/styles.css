@@ -21,7 +21,7 @@
 /* @import "theme-A.css"; */
 /* @import "theme-B.css"; */
 
-
+/*Links*/
 a {
     font-family: "adobe-garamond-pro";
     text-decoration: none;
@@ -36,10 +36,12 @@ a:hover {
     color: #DEC3C3;
 }
 
+/*Remove Logo*/
 .header__logo-image {
     display: none;
 }
 
+/*Site Name*/
 #site-name {
     text-align: center;
     font-family: "proxima-nova";
@@ -50,9 +52,11 @@ a:hover {
     line-height: 1.6em;
 }
 
+
 #site-slogan {
     font-family: "adobe-garamond-pro";
     text-align: center;
+    letter-spacing: 5px;
 }
 
 /* Banner DIV */
@@ -60,6 +64,7 @@ a:hover {
     width: 100%;
 }
 
+/*Navigation Menu*/
 #main-menu {
     font-family: "adobe-garamond-pro";
     letter-spacing: 7px;
@@ -72,6 +77,7 @@ body {
     line-height: 1.4em;
 }
 
+/*Content on all pages*/
 #content {
     font-family: "proxima-nova";
     font-weight: 300;
@@ -88,8 +94,14 @@ p {
     margin-right: 20%;
 }
 
+/*Div margins for Recent Projects*/
 #recentproject-ajax-wrapper {
     width: 50%;
+}
+
+/*Remove 'Home' link from recent projects block*/
+ol {
+    display: none;
 }
 
 h2 {
@@ -100,19 +112,29 @@ h2 {
     letter-spacing: 8px;
 }
 
-ol {
-    display: none;
-}
-
 /* Landing Page */
 .field-label {
     display: none;
 }
 
 img {
-    border-radius: 500px;
+    border-radius: 50px;
 }
 
+/*Center and space 'User Login'*/
 #block-user-login {
-    margin-left: 40%;
+    margin-left: 42%;
+    padding-top: 100px;
+}
+
+li {
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*Resize Landing Page image*/
+.field-name-field-profile-pic {
+    margin-left: 30%;
+    margin-right: 30%;
 }
