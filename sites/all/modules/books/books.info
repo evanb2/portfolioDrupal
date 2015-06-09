@@ -1,0 +1,5 @@
+name = Books Module
+description = Custom module for using ajax in Books page.
+package = Custom Modules
+core = 7.x
+files[] = books.module
