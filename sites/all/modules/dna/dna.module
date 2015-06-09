@@ -27,7 +27,7 @@ function dna_form() {
     );
     $form['submit'] = array(
         '#type' => 'submit',
-        '#value' => 'Sequence',
+        '#value' => '{ Sequence }',
     );
     return $form;
 }

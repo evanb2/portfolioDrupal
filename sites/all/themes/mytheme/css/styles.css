@@ -140,3 +140,11 @@ li {
     margin-right: 30%;
     /*margin-bottom: 10%;*/
 }
+
+#edit-submit {
+    letter-spacing: 5px;
+}
+
+.submitted {
+    text-align: center;
+}
