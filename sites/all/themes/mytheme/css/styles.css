@@ -23,16 +23,17 @@
 
 
 a {
+    font-family: "adobe-garamond-pro";
     text-decoration: none;
-    color: #DEC3C3;
-}
-
-a:active {
     color: #669999;
 }
 
-a:hover {
+a:active {
     text-decoration: line-through;
+}
+
+a:hover {
+    color: #DEC3C3;
 }
 
 .header__logo-image {
@@ -50,6 +51,7 @@ a:hover {
 }
 
 #site-slogan {
+    font-family: "adobe-garamond-pro";
     text-align: center;
 }
 
@@ -59,12 +61,58 @@ a:hover {
 }
 
 #main-menu {
-    test-transform: uppercase;
+    font-family: "adobe-garamond-pro";
     letter-spacing: 7px;
+    margin-left: 20%;
 }
 
 body {
     font-family: "adobe-garamond-pro";
     font-size: 18px;
     line-height: 1.4em;
+}
+
+#content {
+    font-family: "proxima-nova";
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+p {
+    font-size: 15px;
+    font-style: normal;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#recentproject-ajax-wrapper {
+    width: 50%;
+}
+
+h2 {
+    letter-spacing: 8px;
+}
+
+#page-title {
+    letter-spacing: 8px;
+}
+
+ol {
+    display: none;
+}
+
+/* Landing Page */
+.field-label {
+    display: none;
+}
+
+img {
+    border-radius: 500px;
+}
+
+#block-user-login {
+    margin-left: 40%;
 }
