@@ -1,0 +1,18 @@
+<?php
+
+class DNATests extends DrupalUnitTestCase {
+    public static function getInfo() {
+        return array(
+            'name' => 'DNA Sequencer unit tests',
+            'description' => 'Test that the PCR function returns the correct DNA sequence',
+            'group' => 'Examples',
+        );
+    }
+
+    function testDNA_PCR() {
+        $result = dna_pcr('GATC');
+        $message = 'An input of GATC should return CTAG';
+        $this->assertTrue($result, $message);
+    }
+}
+?>
