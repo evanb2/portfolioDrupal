@@ -1,4 +1,17 @@
+Drupal Assessment 4: Portfolio/DNA Module
+By Evan Butler
+Date: June 9, 2015.
 
+Personal portfolio site with custom DNA submodule.
+
+Database Name: portfolio
+    Username: diane
+    Password: 1234
+
+Drupal Site Maintenance Account:
+    Username: diane
+    Password: 1234
+    
 CONTENTS OF THIS FILE
 ---------------------
 
