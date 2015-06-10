@@ -55,9 +55,8 @@ a:hover {
 
 #site-slogan {
     font-family: "adobe-garamond-pro";
-    margin-left: 30%;
+    margin-left: 31%;
     letter-spacing: 5px;
-    /*padding-bottom: 25px;*/
 }
 
 /* Banner DIV */
@@ -67,9 +66,22 @@ a:hover {
 
 /*Navigation Menu*/
 #main-menu {
+    /*font-family: "adobe-garamond-pro";
+    letter-spacing: 7px;*/
+    /*margin-left: 30%;*/
+    display: none;
+}
+
+#navigation {
     font-family: "adobe-garamond-pro";
     letter-spacing: 7px;
-    margin-left: 30%;
+    text-align: center;
+}
+
+/*Center main menu*/
+.menu {
+    display: inline-block;
+    float: none;
 }
 
 body {
