@@ -34,9 +34,14 @@ function dna_form() {
 
 function element_validate_dna($element) {
     $pairs = array('A' => 'T', 'T' => 'A', 'C' => 'G', 'G' => 'C');
+    $input = $element['#value'];
+    $input = strtoupper($input);
+    $input = str_split($input);
 
-    if ( ! array_key_exists($element['#value'], $pairs)) {
-        form_error($element, t('Please enter a valid nucleotide: G, A, T, or C'));
+    foreach ($input as $nucleotide) {
+        if ( ! array_key_exists($nucleotide, $pairs)) {
+            form_error($element, t('Please enter a valid nucleotide: G, A, T, or C'));
+        }
     }
 }
 
@@ -49,15 +54,17 @@ function dna_pcr($dna) {
     foreach ($dna as $nucleotide) {
         $output .= $pairs[$nucleotide];
     }
-
     return $output;
 }
 
 function dna_form_submit($form, &$form_state) {
     $_SESSION['output'] = dna_pcr($form_state['values']['dna']);
+    $_SESSION['user_dna'] = strtoupper($form_state['values']['dna']);
     $form_state['redirect'] = 'dna_success';
 }
 
 function dna_form_success() {
-    return $_SESSION['output'];
+    $output = $_SESSION['output'];
+    $dna = $_SESSION['user_dna'];
+    return "<p>Your strand: " . $dna . "</p><p>Mached Strand: " . $output . "</p>";
 }

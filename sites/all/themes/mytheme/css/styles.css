@@ -76,6 +76,7 @@ body {
     font-family: "adobe-garamond-pro";
     font-size: 18px;
     line-height: 1.4em;
+    background-color: #EBE0D6;
 }
 
 /*Content on all pages*/
@@ -141,10 +142,16 @@ li {
     /*margin-bottom: 10%;*/
 }
 
+/*Submit button on DNA module*/
 #edit-submit {
     letter-spacing: 5px;
 }
 
+/*Project Author*/
 .submitted {
     text-align: center;
+}
+
+#page-title {
+    display: none;
 }

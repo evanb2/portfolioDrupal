@@ -9,6 +9,30 @@ class DNATests extends DrupalUnitTestCase {
         );
     }
 
+    function testA() {
+        $input = 'A';
+        $result = get_dna($input);
+        $this->assertEqual($result, "T");
+    }
+
+    function testT() {
+        $input = 'T';
+        $result = get_dna($input);
+        $this->assertEqual($result, "A");
+    }
+
+    function testC() {
+        $input = 'C';
+        $result = get_dna($input);
+        $this->assertEqual($result, "G");
+    }
+
+    function testG() {
+        $input = 'G';
+        $result = get_dna($input);
+        $this->assertEqual($result, "C");
+    }
+
     function testDNA_PCR() {
         $result = dna_pcr('GATC');
         $message = 'An input of GATC should return CTAG';
